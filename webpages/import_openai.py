@@ -37,6 +37,9 @@ response = openai.Completion.create(
     presence_penalty=0,
 )
 
+# print out some stuff
+print([0, 0, 2])
+
 # Extract the generated text from the response
 generated_text = response["choices"][0]["text"]
 
