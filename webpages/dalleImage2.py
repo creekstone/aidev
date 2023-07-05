@@ -6,7 +6,7 @@ load_dotenv()
 api_key = os.getenv('OPENAPI_KEY')
 
 # Construct the path to the Downloads folder
-downloads_folder = "/Users/bufordconley/Downloads/"
+downloads_folder = os.getenv('MYPATH')
 
 def get_unique_filename(filename):
   # Get the list of all files in the Downloads folder
@@ -63,7 +63,7 @@ if response.status_code == 200:
     image_data = requests.get(image_url).content
 
     # Save the image to the downloads folder
-    with open("/Users/bufordconley/Downloads/dalle-image2.jpg", "wb") as f:
+    with open(os.getenv('MYPATH')+"/dalle-image2.jpg", "wb") as f:
         f.write(image_data)
 
     print("Image saved to the downloads folder")
