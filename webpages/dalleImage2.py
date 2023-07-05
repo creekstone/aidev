@@ -26,9 +26,7 @@ def get_unique_filename(filename):
     i += 1
 
 # Set the prompt that you want Dall-E to generate an image for
-# prompt = "A black and white border collie sits in a field of grass between to two girls, one with long auburn red hair down to the middle of her back and one with long blond hair with their back turned to the artist with a red barn in the background. Puffy clouds in the sky filter bright sunlight on a summer day. oil painting with fine brush strokes"
-# prompt="The concept of 'The Genius of Dumb' in marketing refers to the strategy of framing a message as being simple or straightforward in order to appeal to a wider audience. This approach is based on the idea that people are more likely to engage with and remember messages that are presented in a clear and easy-to-understand manner, rather than those that are complex or technical."
-prompt="3d render of poping the cork on a champagine bottle where fireworks come out"
+prompt = "A black and white border collie sits in a field of grass between to two girls, one with long auburn red hair down to the middle of her back and one with long blond hair with their back turned to the artist with a red barn in the background. Puffy clouds in the sky filter bright sunlight on a summer day. oil painting with fine brush strokes"
 # Set the endpoint URL for the Dall-E API
 endpoint_url = "https://api.openai.com/v1/images/generations"
 
